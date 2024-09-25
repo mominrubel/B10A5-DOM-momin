@@ -82,6 +82,7 @@ historyContainer.insertBefore(historyItem, historyContainer.firstChild)
 })
 
 
+
 //********************* feni Donation ***************************
 document.getElementById("feni-DonateNow").addEventListener("click", function(){
 let balance = innerTextById("balance")
@@ -124,6 +125,7 @@ historyItem.innerHTML = `
 const historyContainer = document.getElementById("history-section")
 historyContainer.insertBefore(historyItem, historyContainer.firstChild)
 })
+
 
 
 //****************** Quota Donation ********************
@@ -170,6 +172,7 @@ historyContainer.insertBefore(historyItem, historyContainer.firstChild)
 })
 
 //------------------------------------------------------------------------
+
 
 
 //************** Btn-Blog click to another page *****************
