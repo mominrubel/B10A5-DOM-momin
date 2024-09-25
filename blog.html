@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B10A5-DOM</title>
+    <!-- Google font link -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- link Tailwing and DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Tailwing css configuration -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            headerBg: '#F9F7F3',
+            btnBg: "#B4F461",
+          },
+          fontFamily: {
+            lexend: "Lexend",
+          }
+        }
+      }
+    }
+  </script>
+
+</head>
+
+<body class="font-lexend m-0 p-0 w-screen">
+<header class="sticky top-0 bg-white bg-opacity-85">
+    <!-- Nav Container div -->
+    <div class="bg-headerBg bg-opacity-75">
+        <!-- nav bar start -->
+        <nav class="w-10/12 mx-auto flex justify-between pt-2 pb-3">
+            <button id="btn-Home" class="btn btn-sm bg-btnBg py-0 text-sm font-semibold">Home</button>
+            <h2 class="flex items-center font-extrabold"><span><img class="w-9/12" src="./assets/logo.png" alt=""></span>Momin Foundation</h2>
+            <h2 class="flex items-center gap-1"><span><img class="w-10/12" src="./assets/coin.png" alt=""></span>
+                <span id="balance">5500</span>BDT</h2>
+        </nav>
+    </div>
+</header>
+
+<section>
+  <div class="w-10/12 mx-auto">
+    <h1 class="font-bold text-2xl pt-10 pb-5">Important FAQ 💬</h1>
+
+    <!-- Accordion -->
+    <div class="space-y-5 border border-slate-200 p-3 rounded-2xl">
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" checked="checked" />
+        <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)</div>
+        <div class="collapse-content">
+          <p class="text-gray-600">Document means HTML document, Object is a javascript entity with specific property and structure and finally DOM is the object representation of any HTML page. DOM is Tree look shape and it has many nodes</p>
+        </div>
+      </div>
+
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">How do you select an element form the DOM?</div>
+        <div class="collapse-content">
+          <p class="text-gray-600">We can select element by two main way, i.e., Single Element Selector and Multiple Element Selector. querySelector or getEelementByID is the example of Single Element Selector whereas getElementsClassName is the example of Multiple Element Selector.</p>
+        </div>
+      </div>
+
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why it is useful?</div>
+        <div class="collapse-content">
+          <p class="text-gray-600">Event Delegation is system to the set addEventListener property to the parent element instead of child. It is useful when we have multiple child element and we don`t need the set addEventListener for everyone</p>
+        </div>
+      </div>
+
+      <div class="collapse collapse-arrow bg-base-200">
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title text-xl font-medium">How do you manipulate an element`s attributes and styles using the DOM?</div>
+          <div class="collapse-content">
+            <p class="text-gray-600">To manipulate an element`s attributes we can use setAttribute() method. JavaScript also allows its users to change the style of any particular element with the help style keyword.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+  
+</section>
+
+<footer>
+  <div class="bg-headerBg h-12 mt-8">
+    <div class="flex flex-col items-center pt-2">
+      <ul>
+        <li class="text-xs text-slate-700 text-opacity-50">📞  Phone: (+880) 0171x-xxxxxx</li>
+        <li class="text-xs text-slate-700 text-opacity-50">📩 Email: mominfoundation@xmail.com</li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<script>
+    document.getElementById("btn-Home").addEventListener("click", function() {
+        window.location.href = "index.html";
+   
+    // const balanceAmount = localStorage.getItem("balanceAmount")
+    // document.getElementById("balance").innerText= balanceAmount
+    });
+</script>
+</body>
+</html>
