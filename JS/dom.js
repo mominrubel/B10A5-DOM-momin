@@ -46,6 +46,7 @@ const noakhaliInput = parseFloat(document.getElementById("noakhali-input").value
 //noakhali validation
 if(noakhaliInput<0 || isNaN(noakhaliInput)){
     alert("⚠️ Error: Invalid Input!");
+    document.getElementById("noakhali-input").value = ""
     return
 }
 if(noakhaliInput>balance || typeof noakhaliInput === "string"){
@@ -89,6 +90,7 @@ const feniInput = parseFloat(document.getElementById("feni-input").value);
 //noakhali validation
 if(feniInput<0 || isNaN(feniInput)){
     alert("⚠️ Error: Invalid Input!");
+    document.getElementById("feni-input").value = ""
     return
 }
 if(feniInput>balance || typeof feniInput === "string"){
@@ -132,6 +134,7 @@ const quotaInput = parseFloat(document.getElementById("quota-input").value);
 //noakhali validation
 if(quotaInput<0 || isNaN(quotaInput)){
     alert("⚠️ Error: Invalid Input!");
+    document.getElementById("quota-input").value = ""
     return
 }
 if(quotaInput>balance || typeof quotaInput === "string"){
