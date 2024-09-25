@@ -87,7 +87,7 @@ document.getElementById("feni-DonateNow").addEventListener("click", function(){
 let balance = innerTextById("balance")
 const feniInput = parseFloat(document.getElementById("feni-input").value);
 
-//noakhali validation
+//feni validation
 if(feniInput<0 || isNaN(feniInput)){
     alert("⚠️ Error: Invalid Input!");
     document.getElementById("feni-input").value = ""
@@ -100,7 +100,7 @@ if(feniInput>balance || typeof feniInput === "string"){
 }
 document.getElementById("warning").classList.add("hidden", "absolute");
 
-//noakhali modal
+//feni modal
 document.getElementById('my_modal_1').showModal()
 
 //feni calculation
@@ -131,7 +131,7 @@ document.getElementById("quota-DonateNow").addEventListener("click", function(){
 let balance = innerTextById("balance")
 const quotaInput = parseFloat(document.getElementById("quota-input").value);
 
-//noakhali validation
+//quota validation
 if(quotaInput<0 || isNaN(quotaInput)){
     alert("⚠️ Error: Invalid Input!");
     document.getElementById("quota-input").value = ""
@@ -144,7 +144,7 @@ if(quotaInput>balance || typeof quotaInput === "string"){
 }
 document.getElementById("warning").classList.add("hidden", "absolute");
 
-//noakhali modal
+//quota modal
 document.getElementById('my_modal_1').showModal()
 
 //quota calculation
