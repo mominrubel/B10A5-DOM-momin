@@ -24,6 +24,8 @@ const btnHistory = document.getElementById("btn-history")
     document.getElementById("card-section").classList.remove("hidden")
     btnHistory.style.backgroundColor= "white"
     btnDonation.style.backgroundColor= "#B4F461"
+
+    document.getElementById("no-history").classList.add("hidden")
 })
 
 
